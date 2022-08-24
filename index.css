@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    
+}
+::placeholder{
+    padding-left: 10px;
+}
+
+.banner{
+    position: relative;
+    background: url(./images/NG-en-20220530-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    padding-top: 15px;
+    
+}
+
+.banner nav img{
+    width: 200px;
+}
+
+.banner nav a{
+    display: inline-block;
+    background-color: red;
+    height: 25px;
+    width: 70px;
+    text-decoration: none;
+    color: white;
+    padding:5px 5px 5px 20px;
+    border-radius: 5px;
+}
+.banner .info{
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner .info p{
+    font-size: 13px;
+}
+
+.banner .info h1{
+    font-size: 50px;
+    font-weight:600;
+}
+
+.banner .info h3{
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.banner .btn{
+    margin-top: 20px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+}
+
+.banner div input{
+    height: 50px;
+    outline: none;
+    width: 350px;
+    background: white;
+    border: none;
+}
+.banner div button{
+    height: 50px;
+    width: 170px;
+    margin-left: -1px;
+    background: red;
+    border: none;
+    font-size: 18px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.banner div button a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .banner{
+         
+    }
+}
+/* banner end */
+
+
+
+
+
+.body{
+    display: flex;
+    background: black;
+    color: white;
+    height: 90vh;
+    border-top: 5px solid gray;
+    /* border-bottom: 5px solid gray; */
+}
+
+.enjoy{
+    position: absolute;
+    top: 123%;
+    left: 12%;
+}
+
+.go h1{
+    font-size: 50px;
+    font-weight:600;
+}
+
+.go p{
+    font-size: 21px;
+}
+
+.vid{
+    position: relative;
+    left: 50%;
+    top: 20%;
+}
+
+.vid img{
+    position: absolute;
+    left: -15%;
+    top: -14%;
+}
+
+@media (max-width: 768px){
+    .body .go{
+        z-index: 1000;
+        position: absolute;
+        left: 25%;
+        
+        
+    }
+    .body h1{
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .body p{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .body .vid{
+        position: absolute;
+        top: 150%;
+        left: 16%;
+        
+    }
+    .body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 50px;
+    }
+
+    .vid img{
+        position: absolute;
+        top: -34%;
+    }
+}
+
+
+/* body one */
+.bodyone{
+    display: flex;
+    background: black;
+    border-top: 3px solid gray;
+    color: white;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+
+.ih{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    border-radius: 9px;
+    width: 370px;
+    height: 90px;
+    background: black;
+    border: 1px solid white;
+}
+
+.ih p{
+    font-weight: normal;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.ih span{
+    color: blue;
+}
+.rr{
+    width: 70px;
+    height: 90px;
+}
+.bodyone .go{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+.bodyone .go h1{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.bodyone .go p{
+    margin-top: 10px;
+}
+@media (max-width:483px){
+    .banner nav img{
+        width: 100px;
+    }
+    .banner nav a{
+        width: 30px;
+        height: 18px;
+        font-size: 9px;
+        padding-top: 13px;
+        padding-right: 14px;
+    }
+    .banner{
+        overflow: hidden;
+        
+    }
+    .banner .info h1{
+        font-size: 30px;
+        margin-top: -50px;
+    }
+
+    .banner .info p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .banner .btn input{
+        width: 270px;
+    }
+
+    .banner .btn button{
+        width: 80px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 768px){
+    .bodyone .img img{
+        width: 65%; 
+    }
+    .bodyone .ih{
+        width: 35%;
+        height: 90px;
+    }
+    .bodyone .ih p{
+        padding-left: 20px;
+    }
+
+    .bodyone .go h1{
+        font-size: 30px;
+    }
+    .bodythree .bdthree h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 699px){
+    .bodyone .go h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .bodyone .ih{
+        width: 38%;
+        height: 90px;
+    }
+    .bodythree .bdthree{
+        padding-right:45px;
+    }
+    .bodythree .bdthree h1{
+        font-size: 25px;
+    }
+    .bodythree .bdthree p{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 599px){
+
+    .body .go{
+        margin: auto;
+        position: absolute;
+        left: 18%;
+    }
+    .vid video{
+        width: 80%;
+    }
+
+    .vid img{
+        width: 100%;
+        position: absolute;
+        left: -12%;
+    }
+
+    .bodyone .img{
+        width: 80%;
+    }
+
+    .bodyone .ih{
+        width: 180px;
+        height: 50px;
+    }
+    .bodyone .ih .rr{
+        width: 50px;
+        height: 50px;
+    }
+    .bodyone .ih p{
+        font-size: 10px;
+    }
+
+    .bodyone .go{
+        position: absolute;
+        top: 15%;
+        left: 45%;
+    }
+    .bodyone .go h1{
+        font-size: 18px;
+    }
+    .bodyone .go p{
+        font-size: 15px;
+    }
+}
+
+/* body one end */
+
+
+/* body two */
+.bodytwo{
+    background: black;
+    color: white;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    padding-left: 13%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.bodytwo h1{
+    font-size: 35px;
+}
+
+@media (max-width: 768px){
+    .bodytwo{
+        text-align: center;
+    }
+}
+
+@media (max-width:599px){
+
+    .bodytwo{
+        padding-right: 80px;
+    }
+    .bodytwo h1{
+        font-size: 19px;
+        
+    }
+
+    .bodytwo p{
+        font-size: 17px;
+    }
+}
+
+
+/* body three */
+.bodythree{
+    background: black;
+    color: white;
+    display: flex;
+}
+
+.bodythree .go{
+    margin-top: 140px;
+    margin-left: 45px;
+}
+
+
+@media (max-width: 768px){
+    .bodythree{
+        padding-bottom: 100px;
+    }
+    .bodythree img{
+        width: 100%;
+        padding-top: 20%;
+    }
+
+    .bodythree h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:599px){
+    .bodythree .img{
+        position: relative;
+        left: 12%; 
+    }
+    .bodythree .img img{
+        width: 450px;
+    }
+
+    .bodythree .go{
+        position: relative;
+        left: -53%;
+        margin-top: 450px;
+    }
+
+    .bodythree .go h1{
+        position: relative;
+        left: -2em;
+    }
+    .bodythree .go p{
+        width: 500px;
+        text-align: center;
+        font-size: 18px;
+        position: relative;
+        left: -10em;
+    }
+}
+
+/* frequent */
+
+.frequent .fr{
+    margin-bottom: 40px;
+}
+.frequent .fr h1{
+    color: white;
+    font-size: 39px;
+    text-align: center;
+}
+.frequent{
+    background: black;
+    position: relative;
+    border-bottom: 3 px solid gray;
+    overflow: hidden;
+}
+.bttn{
+    font-display: grid;
+    position: relative;
+    left: 23%;
+}
+.bttn .words{
+    background: rgb(75, 73, 73);
+    width: 55%;
+    height: 45px;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.words h2{
+    font-size: 20px;
+    padding-top: 10px;
+    color: white;
+    font-weight: normal;
+}
+
+.words span{
+    font-size: 40px;
+    color: white;
+}
+
+@media (max-width:599px){
+    .frequent .fr h1{
+        font-size: 20px;
+    }
+    .frequent .bttn h2{
+        font-size: 15px;
+    }
+
+    .frequent .bttn span{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    
+}
+/* ready */
+
+.ready{
+    background: black;
+    position: relative;
+    height: 250px;
+    margin-top: -10px;
+}
+
+.ready p{
+    color: white;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.ready .btn{
+    margin-top: 20px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ready div input{
+    height: 50px;
+    outline: none;
+    width: 350px;
+    background: white;
+    border: none;
+}
+.ready div button{
+    height: 50px;
+    width: 170px;
+    margin-left: -1px;
+    background: red;
+    border: none;
+    font-size: 18px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.ready div button a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:599px){
+    .ready p{
+        font-size: 12px;
+    }
+    .ready .btn input{
+        width: 250px;
+    }
+}
+
+/* footer */
+
+footer{
+    background: black;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-top: 5px solid gray;
+}
+
+footer h1{
+    color: gray;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 157px;
+    padding-bottom: 50px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .foot{
+    display: grid;
+}
+
+.foot a{
+    text-decoration: none;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+@media (max-width:599){
+    footer{
+        display: none;
+    }
+
+    footer .footer .foot a{
+        font-size: 5px;
+    }
+}
